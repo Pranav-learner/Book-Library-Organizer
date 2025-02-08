@@ -92,6 +92,20 @@ const API_URL = "https://www.googleapis.com/books/v1/volumes?q=";
             });
         }
 
+        // function saveBook(book) {
+        //     let library = JSON.parse(localStorage.getItem(LIBRARY_STORAGE_KEY)) || [];
+        //     const bookIds = new Set(library.map(savedBook => savedBook.id));
+        //     if (bookIds.has(book.id)) {
+        //         displayAlert("Book already in library!");
+        //         return;
+        //     }
+
+        //     library.push(book);
+        //     localStorage.setItem(LIBRARY_STORAGE_KEY, JSON.stringify(library));
+        //     displayLibrary();
+        //     showSuccessMessage("Book saved!");
+        // }
+
         function saveBook(book) {
             let library = JSON.parse(localStorage.getItem(LIBRARY_STORAGE_KEY)) || [];
             const bookIds = new Set(library.map(savedBook => savedBook.id));
@@ -99,12 +113,13 @@ const API_URL = "https://www.googleapis.com/books/v1/volumes?q=";
                 displayAlert("Book already in library!");
                 return;
             }
-
+            book.category = "To Read";
             library.push(book);
             localStorage.setItem(LIBRARY_STORAGE_KEY, JSON.stringify(library));
             displayLibrary();
-            showSuccessMessage("Book saved!");
+            showSuccessMessage("Book saved successfully!");
         }
+        
 
         function displayAlert(message) {
             const alertDiv = document.createElement('div');

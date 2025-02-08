@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 Book Library Organizer</h1>
+
+    <div class="search-options">
+        <input type="text" id="searchBar" placeholder="Search for books...">
+        <select id="genreSelect">
+            <option value="">All Genres</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+            <option value="science_fiction">Science Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="mystery">Mystery</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="historical_fiction">Historical Fiction</option>
+            <option value="biography">Biography</option>
+            <option value="self_help">Self-Help</option>
+        </select>
+        <button onclick="searchBooks()">🔍 Search</button>
+    </div>
+
+    <div id="results"></div>
+
+    <h2>📖 My Library</h2>
+    <div class="saved-books">
+        <div class="category">
+            <h3>📌 To Read</h3>
+            <div id="toRead"></div>
+        </div>
+        <div class="category">
+            <h3>📖 Reading</h3>
+            <div id="reading"></div>
+        </div>
+        <div class="category">
+            <h3>✅ Finished</h3>
+            <div id="finished"></div>
+        </div>
+    </div>
+
+    <div class="loading-indicator">
+        <img src="loading.gif" alt="Loading...">
+    </div>
+    <div class="success-message"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

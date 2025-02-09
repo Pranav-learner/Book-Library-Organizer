@@ -42,4 +42,4 @@ JavaScript: Functionality and interactivity.
 
 7. Google Books API: Fetching book data.
 
-LocalStorage API: Storing user library data.
+8. LocalStorage API: Storing user library data.

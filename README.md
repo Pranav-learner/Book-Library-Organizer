@@ -26,6 +26,20 @@ CSS: Styling and layout.
 
 JavaScript: Functionality and interactivity.
 
-Google Books API: Fetching book data.
+**How It Works**
+
+1. Use the search bar to find books.
+
+2. Select a genre from the dropdown to filter results.
+
+3. Click "Save to Library" to add a book to your personal collection.
+
+4. Move books between categories using the dropdown in the book card.
+
+5. Remove books from your library if needed.
+
+6. All changes persist using LocalStorage.
+
+7. Google Books API: Fetching book data.
 
 LocalStorage API: Storing user library data.

@@ -15,6 +15,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+              background-color: #0056b3;  
         }
 
         header {
@@ -23,7 +24,7 @@
         }
 
         h1 {
-            color: #333;
+            color: white;
             margin-bottom: 20px;
         }
 
